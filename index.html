@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets\styles\style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    
+    <main>
+    <!-- content -->
+    <div class="wrapper">
+
+        <section id="cari" class="search_section">
+            <img src="assets/img/undraw_reading_time_gvg0.svg" alt="Gambar Sticker Buku">
+            <form id="searchBook">
+                <input id="searchBookTitle" type="text" placeholder="Cari Buku">
+                <button id="searchSubmit" class="material-icons" type="submit">Cari</button>
+            </form>
+        </section>
+
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center"><span>Tambah Buku</span></h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Judul Buku</label>
+                    <input type="text" id="title" name="title" placeholder="Ex: SUKA" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="author">Penulis Buku</label>
+                    <input type="text" id="author" name="author" placeholder="Ex: Ikhsan" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="year">Tahun</label>
+                    <input type="number" onKeyPress="if(this.value.length==4) return false;" id="year" name="year"
+                    placeholder="Ex: 2022" required>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </div>
+
+        <!-- item -->
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="container-header">Belum Selesai</h2>
+                    <div class="list-item" id="buku">
+                    </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="container-header">Sudah Selesai</h2>
+                <div class="list-item" id="completed-buku">
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <h4>Belajar Membuat Front-End Web untuk Pemula &#169; 2022, Ikhsan Mustaqim</h4>
+    </footer>
+
+    <script src="assets/js/data.js" type="text/javascript"></script>
+    <script src="assets/js/dom.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/search.js" type="text/javascript"></script>
+</body>
+
+</html>
